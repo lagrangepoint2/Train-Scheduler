@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    
+<div class="jumbotron">
+  <h1>Train Scheduler</h1>
+  <p>Come on, ride the train! Hey, ride it!</p>
+  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+</div>
+
+<container class="row">
+<div class="panel panel-default col-md-12">
+  <div class="panel-heading">
+    <h3 class="panel-title">Current Train Schedule</h3>
+  </div>
+  <div class="panel-body">
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (minutes)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+        </tr>
+        </thead>
+
+        <tbody id="tbody">
+        </tbody>
+
+    </table>
+  </div>
+</div>
+</div>
+</container>
+
+<container class="row">
+<div class="panel panel-default col-md-12">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add A Train</h3>
+  </div>
+  <div class="panel-body">
+        <form>
+        <div class="form-group">
+            <label for="name-form">Train Name:</label>
+            <input type="text" class="form-control" id="name-form">
+        </div>
+        <div class="form-group">
+            <label for="dest-form">Destination:</label>
+            <input type="text" class="form-control" id="dest-form">
+        </div>
+        <div class="form-group">
+            <label for="first-time-form">First Train Time: (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="first-time-form">
+        </div>
+        <div class="form-group">
+            <label for="freq-form">Frequency <min></min></label>
+            <input type="text" class="form-control" id="freq-form">
+        </div>
+
+        <button type="submit" class="btn btn-default" id="submit">Submit</button>
+        </form>
+</div>
+</container>
+
+
+<!-- JQuery/JS/moment.js -->
+<!-- Moment.js Reference -->
+<!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src="assets/javascript/javascript.js"></script>
+</body>
+</html>
+
